@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 30px;
+            padding: 0;
+        }
+
+        /* Header styles */
+        h1 {
+            color: maroon;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        /* Post container styles */
+        .post-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Post styles */
+        .post {
+            background-color: blanchedalmond;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* User styles */
+        .user {
+            font-style: italic;
+            color: #333; /* Dark gray */
+        }
+
+        /* Content styles */
+        .content {
+            color: #555; /* Medium gray */
+        }
+
+        /* Button styles */
+        button {
+            background-color: maroon;
+            color: blanchedalmond;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #800000; /* Darker maroon on hover */
+        }
+
+        /* Link styles */
+        a {
+            color: maroon;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #800000; /* Darker maroon on hover */
+        }
+
+        /* New Post link styles */
+        .new-post-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #800000; /* Darker maroon on hover */
+            color: #fff; /* White text on hover */
+        }
+
+        .display {
+            display: flex;
+            flex-direction: row;
+        }
+
+        h4 {
+            margin-left: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <h1>New Quora Post</h1>
+        <form method="post" action="/posts" class="post">
+            <input placeholder="Enter username" name="username" class="user"> <br><br>
+            <textarea cols="100" rows="10" placeholder="Enter content" name="content" class="content"></textarea> <br>
+            <button>Submit Post</button>
+        </form>
+    </div>
+</body>
+</html>
